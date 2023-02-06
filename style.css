@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+html,body{
+	  width: 100%;
+	  height: 100%;
+	  
+}
+.bg{
+	background: linear-gradient(rgba(0, 109, 253, 0.28),rgba(0, 109, 253, 0.28)),url("bg.jpg");
+    height: 730px;
+    width: 1520px;
+    background-size: cover;
+    background-position: center;
+}
+a{
+	
+	color: white;
+	text-decoration: none;
+
+}
+.container{
+	max-width: 1536px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: Franklin Gothic Heavy;
+	position: fixed;
+	background-color: lawngreen;
+}
+
+.nav{
+	 padding-top: 0;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 text-transform: uppercase;
+	 font-size: 18px; 
+}
+
+.nav ul{
+	display: flex;
+}
+
+.nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards ;
+
+}
+
+.nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+.nav ul li:nth-child(2){
+	animation-delay: 0.5s;
+}
+
+.nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+
+.nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+
+.nav ul li:nth-child(5){
+	animation-delay: 2s;
+}
+
+.nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+
+.nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+
+
+.nav ul li a::after{
+	bottom: 0;
+	transform-origin: left;
+}
+
+.nav ul li a:hover::after{
+
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+
+	to{
+		transform: translateX(0);
+	}
+}
+
+.sub{
+	font-size: 22px;
+	font-weight: 300;
+	transform: translateX(-100rem);  
+	animation: slideIn .5s forwards ;
+}
+
+.sub span{
+	color: crimson;
+	font-size: 24px;
+}
+
+.HOME{
+/*	background-color: red;*/
+    height: 500px;
+    width: 1000px;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+}
+.HOME h1{
+	font-size: 80px;
+	font-family: cursive;
+	color: white;
+	position: absolute;
+	top: 5%;
+}
+
+.HOME h2{
+	font-size: 50px;
+	font-family: cursive;
+	color: white;
+	position: absolute;
+	top: 27%;
+	left: 16%;
+}
+
+.HOME h3{
+	font-size: 70px;
+	font-family: cursive;
+	color: white;
+	position: absolute;
+	top: 45%;
+	left: 14%;
+}
+.HOME span{
+	font-size: 80px;
+	font-family: cursive;
+	color: white;
+	position: absolute;
+	top: 63%;
+
+}
+/*
+---------------about us--------------*/
+.ABOUTUS{
+	height: 730px;
+	width: 1520px;/*
+	background-color: red;*/
+}
+.ABOUTUS h1{
+	font-family: Cooper Black;
+	font-size: 35px;
+	color: lawngreen;
+	position: relative;
+	top: 15%;
+	left: 40%;
+}
+.ABOUTUS p{
+	font-size: 20px;
+	font-family: verdana;
+	color: darkslategray;
+	position: relative;
+	top: 23%;
+	left: 20%;
+	line-height: 1.5;
+}
+
+.ABOUTUS h2{
+	font-size: 22px;
+	font-family: verdana;
+	position: relative;
+	top: 30%;
+	left: 20%;
+	line-height: 1.2;
+}
+
+.ABOUTUS img{
+	height: 80px;
+	width: 80px;
+	position: relative;
+	top: 40%;
+	left: 20%;
+	margin: 2%;
+}
+
+.ABOUTUS h3{
+	font-size: 15px;
+	font-family: verdana;
+	position: relative;
+	top: 38%;
+	left: 21%;
+}
+.ABOUTUS h4{
+	font-size: 12px;
+	font-family: verdana;
+	position: relative;
+	color: darkslategray;
+	top: 39%;
+	left: 21.5%;
+
+}
+.ABOUTUS b{
+	font-size: 13px;
+}
+.Services{
+	position: relative;
+	top: 40%;
+	
+}
+
+/*
+---------------TOURS--------------*/
+.TOURS{
+	height: 730px;
+	width: 1520px;
+}
+
+.TOURS h2{
+	font-size: 30px;
+	font-family: verdana;
+	color: black;
+	position: relative;
+	top: 7%;
+	left: 20%;
+
+}
+.packeg img{
+	border-radius: 10px;
+	margin: 2.5%;
+	margin-bottom: 0.5%;
+	
+}
+.packeg{
+
+	position: relative;
+	top: 5%;
+	left: 20%;
+}
+
+.TOURS  ol{
+	display: flex;
+
+	position: relative;
+	bottom: 82%;
+	left: 24%;
+
+	font-size: 15px;
+	font-family: verdana;
+	color: white;
+		letter-spacing: 2px;
+
+}
+.TOURS ol li{
+	margin: 5%;
+	margin-bottom: 13.8%;
+	list-style: none;
+
+}
+
+.TOURS h5{
+	display: flex;
+
+	font-size: 18px;
+	font-family: verdana;
+	position: relative;
+	bottom: 50%;
+	left: 3%;
+}
+.TOURS h5 samp{
+	
+
+	font-size: 15px;
+	font-family: verdana;
+	color: darkslategray;
+	position: relative;
+	bottom: 50%;
+	left: 0%;
+	margin-right: 9.8%;
+}
+.TOURS h5 b{
+	margin-right: 10%;
+}
+
+.TOURS h4{
+	display: flex;
+	
+	font-size: 18px;
+	font-family: verdana;
+	position: relative;
+	top: 10%;
+	left: 3%;
+}
+.TOURS h4 b{
+	margin-right: 10%;
+}
+
+/*
+---------------CONTACTUS--------------*/
+.CONTACT{height: 730px;
+	width: 1520px;/*
+	background-color: red;*/
+
+		background-color: #1d2b3a}
+
+.CONTACT h1{
+	font-family: Cooper Black;
+	font-size: 38px;
+	color: lawngreen;
+	position: relative;
+	top: 12%;
+	left: 38%;
+
+}
+.CONTACT h2{
+	font-family: Cooper Black;
+	font-size: 30px;
+	color: white;
+	position: relative;
+	top: 14%;
+	left: 36%;
+	margin-top: 2%;
+
+}
+
+.for{
+
+	position: relative;
+	top: 12%;
+	left: 20%;
+	margin-top: 14%;
+	margin-bottom: revert-layer;
+}
+.for1{
+
+	position: relative;
+	top: 12%;
+	left: 20%;
+	margin-top: 2%;
+	margin-bottom: revert-layer;
+}
+.for2{
+
+	position: relative;
+	top: 12%;
+	left: 20%;
+	margin-top: 2%;
+	margin-bottom: revert-layer;
+}
+.for input{
+	width: 50%;
+	padding: 10px;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	background: #1d2b3a;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+	font-size: 23px;
+
+}
+.for1 input{
+	width: 50%;
+	padding: 10px;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	background: #1d2b3a;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+	font-size: 23px;
+
+}
+.for2 input{
+	width: 50%;
+	padding: 10px;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	background: #1d2b3a;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+	font-size: 23px;
+
+}
+.for label{
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 23px;
+	color: rgba(255, 255, 255, 0.25);
+	transition: 0.5s;
+}
+.for1 label{
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 23px;
+	color: rgba(255, 255, 255, 0.25);
+	transition: 0.5s;
+}
+.for2 label{
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 23px;
+	color: rgba(255, 255, 255, 0.25);
+	transition: 0.5s;
+}
+.for input:valid ~ label,
+.for1 input:valid ~ label
+{
+	color: lawngreen;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 18px;
+	padding: 0 10px;
+	background: #1d2b3a;
+	border-left: 2px solid #00dfc4;
+	border-right: 2px solid #00dfc4;
+	letter-spacing: 2px;
+}
+.for2 input:valid ~ label
+{
+	color: lawngreen;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 18px;
+	padding: 0 10px;
+	background: #1d2b3a;
+	border-left: 2px solid #00dfc4;
+	border-right: 2px solid #00dfc4;
+	letter-spacing: 2px;
+}
+.for:nth-child(2) input:valid ~ label,
+.for1:nth-child(2) input:valid ~ label,
+.for2:nth-child(2) input:valid ~ label,
+
+{
+	background: #00dfc4;
+	color: #1d2b3a;
+	border-radius: 2px;
+}
+.for3{
+
+	position: relative;
+	bottom: 20%;
+	left: 20%;
+	margin-top: 2%;
+	margin-bottom: revert-layer;
+}
+.for3 input{
+
+	height: 50px;
+	width: 100px;
+	border-radius: 8px;
+	background: #1d2b3a;
+	font-family: verdana;
+	color: white;
+	font-size: 20px;
+}
+input.active, .for3 input:hover{
+	background-color: lawngreen;
+	transition: all 1s;
+
+	
+}
+.fa-address-book{
+	color: lawngreen;
+	position: relative;
+	top: 42%;
+	left: 44%;
+	font-size: 50px;
+}
